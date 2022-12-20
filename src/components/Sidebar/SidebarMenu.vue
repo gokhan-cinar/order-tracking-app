@@ -5,8 +5,6 @@
         class="icons-logo"></i>
     <el-menu
         default-active="2"
-        @open="handleOpen"
-        @close="handleClose"
         :collapse="isCollapse">
       <el-menu-item index="1">
         <i class="icons-box"></i>
@@ -32,12 +30,6 @@ export default {
   methods: {
     goToHome() {
       this.$router.push('/')
-    },
-    handleOpen(key, keyPath) {
-      console.log(key, keyPath);
-    },
-    handleClose(key, keyPath) {
-      console.log(key, keyPath);
     }
   }
 }

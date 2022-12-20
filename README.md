@@ -1,3 +1,4 @@
+
 ## Technology Stack
 
 - Vuex
@@ -20,12 +21,19 @@
 - PageTitle Folder
     - Index.Component: The area where the page titles are shown
 - SideBar Folder
-    - SideBar.Component: The area where the page titles are shown
-
+    - SideBar.Component: Layer where menu and submenu links are combined
+    - SidebarItem.Component: The Component that submenu links and orders are filtered
+    - SidebarMenu.Component: The component containing icons located vertically on the left
 
 
 ## Project setup
 
 ```
 npm install
+```
+
+## Project Start
+
+```
+npm run serve
 ```

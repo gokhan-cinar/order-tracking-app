@@ -1,0 +1,49 @@
+.button {
+  border-radius: 3px;
+  padding: 11px 15px;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.05em;
+  color: #fff;
+
+  &--blue {
+    background: $default-blue;
+  }
+
+  &--green {
+    background: $default-green;
+
+    &:hover {
+      background: $default-green;
+    }
+  }
+
+  &--default {
+    background: transparent;
+    border: 1.5px solid #CCCCCC;
+    border-radius: 5px;
+    color: #737376;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+
+    &:hover {
+      color: #827e7e;
+      border-color: #d0d3d6;
+      background-color: #e1e1e1;
+    }
+  }
+
+  &.small {
+    font-weight: 300;
+    font-size: 18px;
+  }
+
+  &.medium {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+    color: #F6F6F6;
+  }
+}

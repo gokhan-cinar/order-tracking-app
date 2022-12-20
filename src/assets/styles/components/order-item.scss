@@ -1,0 +1,143 @@
+.order-item-box {
+  border: 1.5px solid #ccc;
+  border-radius: 10px;
+  padding: 27px 42px;
+  margin-bottom: 20px;
+
+  &__ordered-items {
+    display: flex;
+    align-items: center;
+    margin-top: 47px;
+
+    .ordered-item-title {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: normal;
+      letter-spacing: 0.05em;
+      color: $dark-gray;
+      display: block;
+      margin-right: 12px;
+      width: 80px;
+    }
+
+    ul {
+      display: flex;
+      gap: 20px;
+
+      li {
+        span {
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 21px;
+          display: flex;
+          align-items: center;
+          text-align: center;
+          letter-spacing: 0.05em;
+          color: $default-black;
+          background: #EBEBEB;
+          border: 1px solid #E0E0E0;
+          border-radius: 4px;
+          padding: 7px 15px;
+        }
+      }
+    }
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 33px;
+
+    .information {
+      display: grid;
+
+      span {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        letter-spacing: 0.05em;
+        color: $dark-gray;
+      }
+
+      small {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        color: $default-black;
+      }
+    }
+
+    .buttons {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      button {
+        margin-left: 40px;
+        @media only screen and (max-width: 1000px) {
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  .item-list {
+    ul {
+      display: flex;
+      justify-content: space-between;
+      margin: 0;
+      padding: 0;
+      gap: 15px;
+
+      li {
+        display: flex;
+        flex-direction: column;
+
+        small {
+          font-weight: 300;
+          font-size: 17px;
+          line-height: 20px;
+          letter-spacing: 0.05em;
+          color: $dark-gray;
+        }
+
+        span {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 17px;
+          line-height: 21px;
+          letter-spacing: 0.05em;
+          color: $default-black;
+          margin: 5px 0 0;
+        }
+
+        .trans-type {
+          border-radius: 3px;
+          padding: 2px;
+          text-align: center;
+          color: #fff;
+          width: fit-content;
+
+          &.delivery {
+            background: $default-blue;
+          }
+
+          &.takeaway {
+            background: #FC7501;
+          }
+        }
+
+        .amount-cod {
+          background: $default-blue;
+          border-radius: 3px;
+          padding: 2px;
+          text-align: center;
+          color: #fff;
+        }
+      }
+    }
+  }
+
+}

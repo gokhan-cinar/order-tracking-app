@@ -25,6 +25,17 @@
     - SidebarItem.Component: The Component that submenu links and orders are filtered
     - SidebarMenu.Component: The component containing icons located vertically on the left
 
+## Utils File
+
+ - helpers.js: The file containing common functions 
+
+ ## Vuex/Store
+
+ - index.js: Incorporates necessary functions for monitoring interaction between pages and mobile menu management.
+
+ ## LocalStorage
+
+ Created orders are recorded in the localStorage. localStorage was my choice as the data functionality is not large 
 
 ## Project setup
 

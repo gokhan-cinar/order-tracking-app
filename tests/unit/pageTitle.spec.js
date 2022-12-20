@@ -1,4 +1,10 @@
-test('use jsdom in this test file', () => {
-    const element = document.createElement('div');
-    expect(element).not.toBeNull();
-});
+import {mount} from "@vue/test-utils";
+import PageTitle from '../../src/components/PageTitle/PageTitle'
+
+describe('PageTitle.vue', () => {
+    const wrapper = mount(PageTitle);
+
+    it('checks the class ', () => {
+        expect(wrapper.classes()).toContain('icon-hamburger');
+    })
+})

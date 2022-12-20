@@ -70,9 +70,7 @@ export default {
           this.items.splice(i, 1);
         }
       }
-
       helpers.saveItem(this.items)
-      this.items = helpers.getItem('items')
     },
     addOrder() {
       this.$router.push('/create-order')

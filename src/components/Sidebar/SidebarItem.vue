@@ -35,13 +35,16 @@ export default {
     };
   },
   mounted() {
-    if (JSON.parse(localStorage.getItem('items'))) {
-      const getItems = JSON.parse(localStorage.getItem('items'))
-      this.items = getItems.reverse()
-      this.handleValue()
-    }
+    this.setItems()
   },
   methods: {
+    setItems() {
+      if (JSON.parse(localStorage.getItem('items'))) {
+        const getItems = JSON.parse(localStorage.getItem('items'))
+        this.items = getItems.reverse()
+        this.handleValue()
+      }
+    },
     changeLink(value, index) {
       if (this.goToHome) {
         return this.$router.push('/')
@@ -73,13 +76,12 @@ export default {
   watch: {
     getItems: {
       handler() {
-        const getItems = JSON.parse(localStorage.getItem('items'))
-        this.items = getItems
-        this.handleValue()
+        this.setItems()
       },
       deep: true
     },
     $route(to) {
+      this.setItems()
       if (to.path !== '/') {
         return this.goToHome = true
       }
